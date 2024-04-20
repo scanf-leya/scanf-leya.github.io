@@ -10,9 +10,13 @@ const s=()=>{
             apr1.map((e)=>{
                 if (e.id=="b1") {
                     e.addEventListener("click",(el)=>{
+                        let article=document.getElementsByTagName("article")
+                        let a=[...article]
+                        a.map((e)=>{
                         if (e.id=="about") {
                             e.style.display="flex"
                         }else{e.style.display="none"}
+                })
                     })
                 }
                 else if(e.id=="b2") {
